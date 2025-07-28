@@ -38,6 +38,10 @@ There are two commands, that are missing from the commonly distributed v1.1 data
  - [Adafruit SSD1306 scrolling function][6]
  - [Scroll long text on OLED display][7]
 
+### Blog
+
+ - [SSD1306 tricks](https://gr33nonline.wordpress.com/2025/07/22/ssd1306-tricks/)
+
   [1]: https://www.aidansun.com/articles/ssd1306-arduino/
   [2]: https://www.aidansun.com/dl/SSD1306_I2C.zip
   [3]: https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
@@ -45,4 +49,6 @@ There are two commands, that are missing from the commonly distributed v1.1 data
   [5]: https://arduino.stackexchange.com/q/51420/6936
   [6]: https://electronics.stackexchange.com/q/485198/64015
   [7]: https://stackoverflow.com/q/40564050/4424636
+
+  
 
