@@ -42,6 +42,10 @@ There are two commands, that are missing from the commonly distributed v1.1 data
 
  - [SSD1306 tricks](https://gr33nonline.wordpress.com/2025/07/22/ssd1306-tricks/)
 
+## Known issues
+
+ - Scrolling causes white background to "appear" - weird configuration bug, under investigation.
+
   [1]: https://www.aidansun.com/articles/ssd1306-arduino/
   [2]: https://www.aidansun.com/dl/SSD1306_I2C.zip
   [3]: https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
