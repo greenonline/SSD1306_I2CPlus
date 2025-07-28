@@ -20,7 +20,10 @@ The 1-pixel scroll commands (`2Ch` and `2Dh`) are not documented in either the [
 
 ### Commands from v1.5 of the datasheet
 
-There are two commands that are missing from the comonly distributed v1.1 data sheet, Fade/Blink (`23h`) and Zoom (`D6h`).
+There are two commands, that are missing from the commonly distributed v1.1 data sheet, documented in v1.5 of the data sheet:
+
+ - Fade/Blink (`23h`)
+ - Zoom (`D6h`).
 
 ## Links
 
