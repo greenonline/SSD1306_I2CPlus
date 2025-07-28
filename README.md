@@ -25,6 +25,10 @@ There are two commands, that are missing from the commonly distributed v1.1 data
  - Fade/Blink (`23h`)
  - Zoom (`D6h`).
 
+## See also
+
+A similarly derived library for the `Adafruit_SSD1306` Arduino library, [`Adafruit_SSD1306Plus`](https://github.com/greenonline/Adafruit_SSD1306Plus), that offers the same extended functionality.
+
 ## Links
 
 ### Datasheets
