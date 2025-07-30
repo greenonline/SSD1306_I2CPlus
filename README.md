@@ -85,6 +85,7 @@ A similarly derived library for the `Adafruit_SSD1306` Arduino library, [`Adafru
 ## Known issues
 
  - Scrolling causes white background to "appear" - weird configuration bug, under investigation.
+ - Bug in parent library: Diagonal scroll does not work in `SSD1306_I2C/examples/ScrollDisplay.ino`
 
   [1]: https://www.aidansun.com/articles/ssd1306-arduino/
   [2]: https://www.aidansun.com/dl/SSD1306_I2C.zip
