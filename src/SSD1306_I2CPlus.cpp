@@ -46,6 +46,21 @@ void SSD1306Plus::setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t 
   sendCommand(0xFF);
 }
 
+// dir: 0 - right, 1 - left
+void SSD1306::setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval) {
+  stopScroll();
+
+  // Command values for horizontal and vertical
+  uint8_t addrs[] = { 0x24, 0x25 };
+  uint8_t dirs[]  = { 1, 63 };
+
+  sendCommand(addrs[dirX]);
+  sendCommand(0x00);
+  sendCommand(start);
+  sendCommand(interval);
+  sendCommand(end);
+  sendCommand(dirs[dirY]);
+}
 
 // New commands to v1.5
 
