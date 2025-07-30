@@ -61,4 +61,4 @@ All that remains to test this, is to implement a new method:
  - `setupScrollHVOne()`
 
 
-Unfortunatelty, when tested, commands `0x24` and `0x25` did *not* scroll the display at all. Maybe some other currently unused bytes would work instead?  Further testing is ongoing.
+Unfortunately, when tested, commands `0x24` and `0x25` did *not* scroll the display at all. Maybe some other currently unused bytes would work instead?  Further testing is ongoing.
