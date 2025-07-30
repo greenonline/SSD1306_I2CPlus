@@ -3,6 +3,10 @@
    Sketch to demonstrate various commands to send to the OLED.
    Note: None of these commands affect the display's RAM, so
    updateDisplay() isn't needed.
+
+   Identical to SSD1306_I2C/examples ControlCommands.ino
+     except this sketch uses SSD1306_I2C_Plus library
+
    Created July 28, 2025
 */
 
