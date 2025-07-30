@@ -45,6 +45,7 @@ public:
 
   // Scrolling
   void setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t interval);
+  void setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval);
 
 
   // New features from v1.5 datasheet
