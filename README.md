@@ -51,7 +51,11 @@ Each of the three regions are scrolled at varying rates, with the mid-ground scr
 
 <sup>This is *actual* footage taken with an iPhone SE (1st gen), hence the poor quality and "rolling sync bars". The effect is much more fluid in real life.</sup>
 
-### Important Note
+## Important Notes
+
+### 1-pixel scroll
+
+#### Seeeduino Xiao
 
 I found, on the Seeeduino Xiao (SAMD21) at least, that a delay ***is*** required, *immediately* after issuing a 1-pixel scroll command, or when ***repeatedly*** issuing 1-pixel scroll commands. 
 
