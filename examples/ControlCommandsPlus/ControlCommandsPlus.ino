@@ -3,7 +3,7 @@
    Sketch to demonstrate various commands to send to the OLED.
    Note: None of these commands affect the display's RAM, so
    updateDisplay() isn't needed.
-   Created July 2, 2020
+   Created July 28, 2025
 */
 
 #include <SSD1306_I2CPlus.h>
