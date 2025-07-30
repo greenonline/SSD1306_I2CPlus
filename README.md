@@ -18,6 +18,25 @@ The 1-pixel scroll commands (`2Ch` and `2Dh`) are not documented in either the [
 > 
 > Use the latter two.
 
+#### Example of 1-pixel scroll
+
+This example illustrates a scrolling technique, that would be significantly more difficult to implement using continuous scrolling. It uses this 128x64 bitmap of a crudely drawn landscape:
+
+> [![128x64 Bitmap landscape][9]][9]
+
+The above landscape is split in to three horizontal regions:
+
+ - Background - Pages `0x00` - `0x02` - The clouds
+ - Mid-ground - Pages `0x02` - `0x05` - The mountain range
+ - Foreground - Pages `0x06` - `0x07` - The rocky ground
+
+Each of the three regions are scrolled at varying rates, with the mid-ground scrolling twice as fast as the background, and the foreground scrolling twice as fast as the mid-ground:
+
+[![Xiao SSD1306 Landscape Scroll][10]][10]
+
+<sup>This is *actual* footage taken with an iPhone SE (1st gen), hence the poor quality and "rolling sync bars". The effect is much more fluid in real life.</sup>
+
+
 #### Important Note
 
 I found, on the Seeeduino Xiao (SAMD21) at least, that a delay ***is*** required, *immediately* after issuing a 1-pixel scroll command, or when ***repeatedly*** issuing 1-pixel scroll commands. 
@@ -68,6 +87,8 @@ A similarly derived library for the `Adafruit_SSD1306` Arduino library, [`Adafru
   [5]: https://arduino.stackexchange.com/q/51420/6936
   [6]: https://electronics.stackexchange.com/q/485198/64015
   [7]: https://stackoverflow.com/q/40564050/4424636
+  [9]: https://github.com/greenonline/Adafruit_SSD1306Plus/blob/main/xtras/Landscape.bmp "128x64 Bitmap landscape"
+  [10]: https://github.com/greenonline/Adafruit_SSD1306Plus/blob/main/xtras/Landscape_Video_XiaoDevBoard480pCropped.gif "Xiao SSD1306 Landscape Scroll"
 
   
 
