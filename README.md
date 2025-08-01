@@ -18,12 +18,32 @@ The 1-pixel scroll commands (`2Ch` and `2Dh`) are not documented in either the [
 > 
 > Use the latter two.
 
+##### Method
+
+```none
+  void setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t interval);
+```
+
+
 ### Commands from v1.5 of the datasheet
+
+#### Fade/blink and zoom
 
 There are two commands, that are missing from the commonly distributed v1.1 data sheet, documented in v1.5 of the data sheet:
 
  - Fade/Blink (`23h`)
- - Zoom (`D6h`).
+ - Zoom (`D6h`)
+
+##### Methods
+
+```none
+  void fade(uint8_t time);
+  void blink(uint8_t time);
+  void stopFadeBlink(void);
+  void stopFade(void);
+  void stopBlink(void);
+  void setZoom(bool i);
+```
 
 ## Is there a 'hidden', or undocumented, single pixel vertical/horizontal scroll?
 
@@ -31,7 +51,17 @@ Seeing as there are two undocumented *horizontal* scroll commands, so, likewise,
 
 See [Undocumented 1-pixel vertical scroll](xtras/OnePixelVertScroll.md) for more details.
 
+##### Method
+
+**Note**: *This is experimental, and does not work (yet)*.
+
+```none
+  void setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval);
+```
+
 ## Examples
+
+There are multiple examples of how to use the new public methods, in the [`examples/`](examples/) directory.
 
 ### Example of 1-pixel scroll
 
