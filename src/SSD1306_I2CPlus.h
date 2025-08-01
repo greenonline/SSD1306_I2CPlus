@@ -56,7 +56,5 @@ public:
   void stopBlink(void);
   void setZoom(bool i);
 
-
-
 };
 #endif
