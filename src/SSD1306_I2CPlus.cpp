@@ -36,7 +36,11 @@ void SSD1306Plus::_newLine() {
 
 // dir: 0 - right, 1 - left
 void SSD1306Plus::setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t interval) {
-  stopScroll();
+  //stopScroll();         // <----- Not needed every call. 
+                          // Just call once (before calling this method)
+                          // Either after a continuous scroll, 
+                          // or to ensure continuous scroll is stopped
+   
   sendCommand(0x2C + int(dir));
   sendCommand(0x00);
   sendCommand(start);
@@ -48,7 +52,10 @@ void SSD1306Plus::setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t 
 
 // dir: 0 - right, 1 - left
 void SSD1306Plus::setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval) {
-  stopScroll();
+  //stopScroll();         // <----- Not needed every call. 
+                          // Just call once (before calling this method)
+                          // Either after a continuous scroll, 
+                          // or to ensure continuous scroll is stopped
 
   // Command values for horizontal and vertical
   uint8_t addrs[] = { 0x24, 0x25 };
@@ -61,6 +68,7 @@ void SSD1306Plus::setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t 
   sendCommand(end);
   sendCommand(dirs[dirY]);
 }
+
 
 // New commands to v1.5
 
