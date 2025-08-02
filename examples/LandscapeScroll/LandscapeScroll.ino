@@ -95,6 +95,8 @@ void loop() {
 
 void scroll_landscape(void) {
 
+    display.stopScroll();  // Call once before starting a series of 1-pixel scrolls
+
     int wait_time = 12;  // For the Xiao: 15 is the minimum (maybe 12... but definitely not 11)
 
     for (int j = 0; j < 2; j++) {
