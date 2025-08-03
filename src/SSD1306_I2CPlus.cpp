@@ -69,6 +69,16 @@ void SSD1306Plus::setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t 
   sendCommand(dirs[dirY]);
 }
 
+void SSD1306Plus::setupScrollHOneWait(bool dir, uint8_t start, uint8_t end, uint8_t interval, int scrollWaitTime) {
+  setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t interval);
+  delay(scrollWaitTime);
+}
+
+void SSD1306Plus::setupScrollHVOneWait(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval, int scrollWaitTime) {
+  setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval);
+  delay(scrollWaitTime);
+}
+
 
 // New commands to v1.5
 
