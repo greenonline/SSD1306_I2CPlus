@@ -47,6 +47,9 @@ public:
   void setupScrollHOne(bool dir, uint8_t start, uint8_t end, uint8_t interval);
   void setupScrollHVOne(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval);
 
+  void setupScrollHOneWait(bool dir, uint8_t start, uint8_t end, uint8_t interval, int scrollWaitTime);
+  void setupScrollHVOneWait(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval, int scrollWaitTime);
+
 
   // New features from v1.5 datasheet
   void fade(uint8_t time);
