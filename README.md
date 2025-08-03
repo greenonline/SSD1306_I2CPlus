@@ -110,6 +110,16 @@ I found, on the Seeeduino Xiao (SAMD21) at least, that a delay ***is*** required
 
 Without any `delay(wait_time)` then no scrolling occurred at all. If `wait_time` is less than 12 ms delay, then that causes some of the scrolls to fail, and the full 50 pixels are *not* scrolled. The closer that the delay is to zero, the less distance, in pixels scrolled, the text/images actually move. The minimum length of the required delay probably depends upon the frequency of the µController, so you may need to experiment for your particular setup.
 
+##### Pairing of 1-pixel scroll and delay
+
+Seeing as a *brief* delay is *always* required, after a 1-pixel scroll, it seemed expedient to combine the two together in wrapper methods that just combine the two into one simple call:
+
+```none
+void SSD1306Plus::setupScrollHOneWait(bool dir, uint8_t start, uint8_t end, int interval); 
+void SSD1306Plus::setupScrollHVOneWait(bool dirX, bool dirY, uint8_t start, uint8_t end, uint8_t interval, int scrollWaitTime);
+```
+
+
 ### Vertical 1-pixel scroll
 
 Feel free to experiment! You can try to find the *mythical* 1-pixel vertical scroll yourself by changing the values of the command byte in `setupScrollHVOne` in `SSD1306_I2CPlus.cpp`.
