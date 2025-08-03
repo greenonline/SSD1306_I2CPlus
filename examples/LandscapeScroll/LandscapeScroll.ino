@@ -101,12 +101,12 @@ void scroll_landscape(void) {
 
     for (int j = 0; j < 2; j++) {
         for (int i = 0; i < 2; i++) {
-            display.setupScrollHOne(LEFT,  6, 7, FRAMES_2);
+            display.setupScrollHOne(LEFT,  6, 7, FRAMES_5);
             delay(wait_time);
         }
-        display.setupScrollHOne(LEFT,  3, 5, FRAMES_2);
+        display.setupScrollHOne(LEFT,  3, 5, FRAMES_5);
         delay(wait_time);
     }
-    display.setupScrollHOne(LEFT,  0, 2, FRAMES_2);
+    display.setupScrollHOne(LEFT,  0, 2, FRAMES_5);
     delay(wait_time);
 }
