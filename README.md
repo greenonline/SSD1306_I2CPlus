@@ -95,7 +95,7 @@ Setting the 'interval' byte to `0b111` (i.e. `FRAMES_2`) prevents wrap-around sc
 
 #### 1-pixel scrolling and `stopScroll()` 
 
-Note that, unlike the continuous scroll methods, for the parent class `SSD1306_I2C`, the 1-pixel scroll methods do not call `stopScroll()` at the beginning of the methods, as it is not required, nor efficient, to do so, for the 1-pixel scroll methods *only*. 
+Note that, unlike the continuous scroll methods of the parent class `SSD1306_I2C`, the 1-pixel scroll methods do not call `stopScroll()` at the beginning of the methods, as it is not required, nor efficient, to do so, for the 1-pixel scroll methods *only*. 
 
 However, it *is* good practice to call `stopScroll()` *once* before commencing a series of 1-pixel scroll method calls – or any scroll commmands for that matter – just to be certain that any continuous scrolling, that *might* be occurring, is halted – otherwise the display's RAM buffer may become corrupted.
 
