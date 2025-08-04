@@ -166,11 +166,51 @@ void theBusiness(){
   //
   // Now try a loop of 20 right 1-pixel scrolls
   // Using the scroll method
-  // This fails - white background
+  // This "fails" - white background
   //
 
   int i;
   int wait_time = 20;
+
+  for (i = 0; i < 20; i++) {
+    display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
+    //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
+    //display.startScroll();  // Begin scroll - not required for 1-pixel scroll
+    delay(wait_time);         // Wait a while between scrolling
+  }
+
+  //
+  // Wobble - left
+  // This "fails" - white background
+  //
+
+  for (i = 0; i < 10; i++) {
+    display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
+    //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
+    //display.startScroll();  // Begin scroll - not required for 1-pixel scroll
+    delay(wait_time);         // Wait a while between scrolling
+  }
+
+  //
+  // Wobble - right
+  // This "fails" - white background
+  //
+
+  for (i = 0; i < 10; i++) {
+    display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
+    //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
+    //display.startScroll();  // Begin scroll - not required for 1-pixel scroll
+    delay(wait_time);         // Wait a while between scrolling
+  }
+
+  //
+  // Now scroll "properly" with wrap-around,
+  //    a loop of 20 right 1-pixel scrolls
+  // Using the scroll method
+  //
+
+  display.displayBitmapImage(image, 0, 0, 128, 64);
+  display.updateDisplay();
 
   for (i = 0; i < 20; i++) {
     //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
@@ -180,8 +220,8 @@ void theBusiness(){
   }
 
   //
-  //Wobble - left
-  // This fails - white background
+  // Wobble - left
+  // This works - wrap-around
   //
 
   for (i = 0; i < 10; i++) {
@@ -192,8 +232,8 @@ void theBusiness(){
   }
 
   //
-  //Wobble - right
-  // This fails - white background
+  // Wobble - right
+  // This works - wrap-around
   //
 
   for (i = 0; i < 10; i++) {
