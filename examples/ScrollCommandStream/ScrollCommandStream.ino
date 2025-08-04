@@ -185,8 +185,8 @@ void theBusiness(){
   //
 
   for (i = 0; i < 10; i++) {
-    display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
-    //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
+    display.setupScrollHOne(LEFT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
+    //display.setupScrollHOne(LEFT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
     //display.startScroll();  // Begin scroll - not required for 1-pixel scroll
     delay(wait_time);         // Wait a while between scrolling
   }
@@ -225,8 +225,8 @@ void theBusiness(){
   //
 
   for (i = 0; i < 10; i++) {
-    //display.setupScrollHOne(RIGHT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
-    display.setupScrollHOne(RIGHT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
+    //display.setupScrollHOne(LEFT, 0, 7, FRAMES_2);  // FRAMES_2 causes white background
+    display.setupScrollHOne(LEFT, 0, 7, FRAMES_5);    // FRAMES_5 no white background
     //display.startScroll();  // Begin scroll - not required for 1-pixel scroll
     delay(wait_time);         // Wait a while between scrolling
   }
