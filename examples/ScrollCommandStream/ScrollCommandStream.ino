@@ -6,7 +6,9 @@
    Derived from the ScrollDisplay.ino example from SSD1306_I2C, 
    but modified to show landscape bitmap instead.
    As well as the scroll methods, raw command bytes are also used to the same effect.
-   Test sketch - does the white background still occur for 1-pixel scrolls?
+   Test sketch - Why does the white background occur for 1-pixel scrolls?
+   Result: White background due to interval equal to `0b111`
+           Wrap-around scrolling - interval equal to `0b000`
 
    Created Aug 2, 2025
 */
