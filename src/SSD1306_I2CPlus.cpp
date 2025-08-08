@@ -113,3 +113,39 @@ void SSD1306Plus::setZoom(bool i){
   sendCommand(i);
 }
 
+// Extra bonus features!
+// COM Pins configuration
+void SSD1306Plus::setCOMPins(bool com, bool lr){
+}
+
+void SSD1306Plus::setCOMPins_SEQCOM_NOLR(void){
+}
+
+void SSD1306Plus::setCOMPins_ALTCOM_NOLR(void){
+}
+
+void SSD1306Plus::setCOMPins_SEQCOM_ENLR(void){
+}
+
+void SSD1306Plus::setCOMPins_ALTCOM_ENLR(void){
+}
+
+// Charge Pump
+void SSD1306Plus::setChargePump(bool i){
+}
+
+void SSD1306Plus::setChargePumpOn(void){
+}
+
+void SSD1306Plus::setChargePumpOff(void){
+}
+
+void SSD1306Plus::setChargePumpDisplay(bool i){
+}
+
+void SSD1306Plus::setChargePumpOnDisplay(void){
+}
+
+void SSD1306Plus::setChargePumpOffDisplay(void){
+}
+
