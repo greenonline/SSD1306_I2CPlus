@@ -116,36 +116,61 @@ void SSD1306Plus::setZoom(bool i){
 // Extra bonus features!
 // COM Pins configuration
 void SSD1306Plus::setCOMPins(bool com, bool lr){
+  sendCommand(0xDA);
+  sendCommand(0x02 + com*32 + lr*64);
 }
 
 void SSD1306Plus::setCOMPins_SEQCOM_NOLR(void){
+  sendCommand(0xDA);
+  sendCommand(0x02);
 }
 
 void SSD1306Plus::setCOMPins_ALTCOM_NOLR(void){
+  sendCommand(0xDA);
+  sendCommand(0x12);
 }
 
 void SSD1306Plus::setCOMPins_SEQCOM_ENLR(void){
+  sendCommand(0xDA);
+  sendCommand(0x22);
 }
 
 void SSD1306Plus::setCOMPins_ALTCOM_ENLR(void){
+  sendCommand(0xDA);
+  sendCommand(0x32);
 }
 
 // Charge Pump
 void SSD1306Plus::setChargePump(bool i){
+  sendCommand(0xDA);
+  sendCommand(0x10+4*i);
 }
 
 void SSD1306Plus::setChargePumpOn(void){
+  sendCommand(0xDA);
+  sendCommand(0x14);
 }
 
 void SSD1306Plus::setChargePumpOff(void){
+  sendCommand(0xDA);
+  sendCommand(0x10);
 }
 
 void SSD1306Plus::setChargePumpDisplay(bool i){
+  sendCommand(0xDA);
+  sendCommand(0x10+4*i);
+  sendCommand(0xAF);
 }
 
 void SSD1306Plus::setChargePumpOnDisplay(void){
+  sendCommand(0xDA);
+  sendCommand(0x14);
+  sendCommand(0xAF);
 }
 
 void SSD1306Plus::setChargePumpOffDisplay(void){
+  sendCommand(0xDA);
+  sendCommand(0x10);
+  sendCommand(0xAF);
 }
 
