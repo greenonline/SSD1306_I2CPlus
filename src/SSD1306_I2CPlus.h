@@ -71,5 +71,8 @@ public:
   void setChargePump(bool i);
   void setChargePumpOn(void);
   void setChargePumpOff(void);
+  void setChargePumpDisplay(bool i);
+  void setChargePumpOnDisplay(void);
+  void setChargePumpOffDisplay(void);
 };
 #endif
