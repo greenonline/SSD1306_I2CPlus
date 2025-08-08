@@ -59,5 +59,17 @@ public:
   void stopBlink(void);
   void setZoom(bool i);
 
+
+  // Extra bonus features!
+  // COM Pins configuration
+  void setCOMPins(bool com, bool lr);
+  void setCOMPins_SEQCOM_NOLR(void);
+  void setCOMPins_ALTCOM_NOLR(void);
+  void setCOMPins_SEQCOM_ENLR(void);
+  void setCOMPins_ALTCOM_ENLR(void);
+  // Charge Pump
+  void setChargePump(bool i);
+  void setChargePumpOn(void);
+  void setChargePumpOff(void);
 };
 #endif
