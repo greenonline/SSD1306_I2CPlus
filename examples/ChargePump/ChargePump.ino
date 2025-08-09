@@ -43,12 +43,16 @@ void setup() {
   Wire.begin();
   display.begin(0x3C);
 
+  // Uncomment only if you know what you are doing!
+  // Please refer to the data sheet for more information
   //doChargePumpStuff();
 
 }
 
 void loop() {
-  doChargePumpStuff();
+  // Uncomment only if you know what you are doing!
+  // Please refer to the data sheet for more information
+  //doChargePumpStuff();
 }
 
 
