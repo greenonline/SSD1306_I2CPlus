@@ -57,7 +57,9 @@ public:
   void stopFadeBlink(void);
   void stopFade(void);
   void stopBlink(void);
+  void zoom(void);
   void setZoom(bool i);
+  void stopZoom(void);
 
 
   // Extra bonus features!
