@@ -81,12 +81,20 @@ void setup() {
   }
 
   display.updateDisplay();
+  // Call here to run demo one-time only
+  //DoZoomDemo();
 
+}
+
+void loop() {
+  // Call here to cycle demo indefinitely
+  DoZoomDemo();
+}
+
+void DoZoomDemo(void){
   display.setZoom(true);
   delay(2000);            // Wait 2 seconds to see the effect
 
   display.setZoom(false);
   delay(2000);            // Wait 2 seconds to see the effect
 }
-
-void loop() {}
