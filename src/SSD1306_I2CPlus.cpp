@@ -82,9 +82,6 @@ void SSD1306Plus::setupScrollHVOneWait(bool dirX, bool dirY, uint8_t start, uint
 
 // New commands to v1.5
 
-#define SSD1306_SFB_FADE  0x20
-#define SSD1306_SFB_BLINK 0x30
-
 void SSD1306Plus::fade(uint8_t time){
   sendCommand(0x23);
   sendCommand(SSD1306_SFB_FADE + time);
@@ -152,34 +149,34 @@ void SSD1306Plus::setCOMPins_ALTCOM_ENLR(void){
 
 // Charge Pump
 void SSD1306Plus::setChargePump(bool i){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x10+4*i);
 }
 
 void SSD1306Plus::setChargePumpOn(void){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x14);
 }
 
 void SSD1306Plus::setChargePumpOff(void){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x10);
 }
 
 void SSD1306Plus::setChargePumpDisplay(bool i){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x10+4*i);
   sendCommand(0xAF);
 }
 
 void SSD1306Plus::setChargePumpOnDisplay(void){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x14);
   sendCommand(0xAF);
 }
 
 void SSD1306Plus::setChargePumpOffDisplay(void){
-  sendCommand(0xDA);
+  sendCommand(0x8D);
   sendCommand(0x10);
   sendCommand(0xAF);
 }
