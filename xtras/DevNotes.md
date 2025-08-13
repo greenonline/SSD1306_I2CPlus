@@ -45,7 +45,7 @@ Be sure to stop scroll, fade, blink, and especially zoom, at the beginning of a 
 ```none
   // Stop scroll, fade, blink and zoom
   display.stopFadeBlink();
-  display.stopscroll();
+  display.stopScroll();
   display.stopZoom();
 ```
 
