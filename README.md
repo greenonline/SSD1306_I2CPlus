@@ -42,7 +42,9 @@ There are two commands, that are missing from the commonly distributed v1.1 data
   void stopFadeBlink(void);
   void stopFade(void);
   void stopBlink(void);
+  void zoom(void);
   void setZoom(bool i);
+  void stopZoom(void);
 ```
 
 ## Is there a 'hidden', or undocumented, single pixel vertical/horizontal scroll?
