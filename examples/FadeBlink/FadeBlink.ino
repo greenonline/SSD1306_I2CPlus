@@ -91,11 +91,31 @@ void setup() {
   display.displayBitmapImage(image, 0, 0, 128, 64);
   display.updateDisplay();
 
+  // Call here to run demo one-time only
+  //DoDemo();
+}
+
+void loop() {
+  // Call here to cycle demo indefinitely
+  DoDemo();
+}
+
+void DoDemo() {
+  display.setTextSize(2);
+  display.setCursor(15, 50);
+  display.print("Fade   ", HIGH);
+  display.updateDisplay();
+
+
   display.fade(0);
   delay(5000);  // Wait 5 seconds to see the effect
 
   display.stopFade();
   delay(500);  // Wait half a second
+
+  display.setCursor(15, 50);
+  display.print("Blink   ", HIGH);
+  display.updateDisplay();
 
   display.blink(0);
   delay(5000);  // Wait 5 seconds to see the effect
@@ -103,7 +123,10 @@ void setup() {
   display.stopBlink();
   delay(500);  // Wait half a second
 
-  display.blink(3);  // Slowly blink, or "breathe", ad infinitum
-}
+  display.setCursor(15, 50);
+  display.print("Breathe", HIGH);
+  display.updateDisplay();
 
-void loop() {}
+  display.blink(3);  // Slowly blink, or "breathe", ad infinitum
+  delay(20000);      // Wait 10 seconds to see the effect
+}
