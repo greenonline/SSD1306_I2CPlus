@@ -108,9 +108,19 @@ void SSD1306Plus::stopBlink(void){
   stopFadeBlink();
 }
 
+void SSD1306Plus::zoom(void){
+  sendCommand(0xD6);
+  sendCommand(0x01);
+}
+
 void SSD1306Plus::setZoom(bool i){
   sendCommand(0xD6);
   sendCommand(i);
+}
+
+void SSD1306Plus::stopZoom(void){
+  sendCommand(0xD6);
+  sendCommand(0x00);
 }
 
 // Extra bonus features!
