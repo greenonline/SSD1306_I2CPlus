@@ -20,6 +20,16 @@
 #define FRAMES_128 0b010
 #define FRAMES_256 0b011
 
+// New commands to v1.5 and new defines
+
+#define SSD1306_SFB          0x23
+#define SSD1306_SFB_FADE     0x20
+#define SSD1306_SFB_BLINK    0x30
+#define SSD1306_ZOOM         0xD6
+#define SSD1306_COMPINCFG    0xDA
+#define SSD1306_CHARGEPUMP   0x8D
+#define SSD1306_DISPLAYON    0xAF
+
 #define OUTLINE false
 #define FILL    true
 
