@@ -81,24 +81,29 @@ void setup() {
   Wire.begin();
   display.begin(0x3C);
 
+  // Note: Stop scroll, fade, blink and (especially) zoom.
+  display.stopFadeBlink();
+  display.stopScroll();
+  display.stopZoom();
+
   // Display the bitmap
   // Top-left corner is (0, 0), width is 128, height is 64, source is the 'image' bitmap
   display.displayBitmapImage(image, 0, 0, 128, 64);
   display.updateDisplay();
 
   display.fade(0);
-  delay(5000);            // Wait 5 seconds to see the effect
+  delay(5000);  // Wait 5 seconds to see the effect
 
   display.stopFade();
-  delay(500);            // Wait half a second
+  delay(500);  // Wait half a second
 
   display.blink(0);
-  delay(5000);            // Wait 5 seconds to see the effect
+  delay(5000);  // Wait 5 seconds to see the effect
 
   display.stopBlink();
-  delay(500);            // Wait half a second
+  delay(500);  // Wait half a second
 
-  display.blink(3);      // Slowly blink, or "breathe", ad infinitum
+  display.blink(3);  // Slowly blink, or "breathe", ad infinitum
 }
 
 void loop() {}
