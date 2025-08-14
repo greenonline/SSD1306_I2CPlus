@@ -102,8 +102,9 @@ void loop() {
 
 void DoDemo() {
   display.setTextSize(2);
-  display.setCursor(15, 50);
-  display.print("Fade   ", HIGH);
+  //display.setCursor(15, 50);
+  display.setCursor(16, 50);
+  display.print("  Fade   ", HIGH);
   display.updateDisplay();
 
 
@@ -113,8 +114,9 @@ void DoDemo() {
   display.stopFade();
   delay(500);  // Wait half a second
 
-  display.setCursor(15, 50);
-  display.print("Blink   ", HIGH);
+  //display.setCursor(15, 50);
+  display.setCursor(16, 50);
+  display.print("  Blink ", HIGH);
   display.updateDisplay();
 
   display.blink(0);
@@ -123,8 +125,9 @@ void DoDemo() {
   display.stopBlink();
   delay(500);  // Wait half a second
 
-  display.setCursor(15, 50);
-  display.print("Breathe", HIGH);
+  //display.setCursor(15, 50);
+  display.setCursor(16, 50);
+  display.print(" Breathe", HIGH);
   display.updateDisplay();
 
   display.blink(3);  // Slowly blink, or "breathe", ad infinitum
