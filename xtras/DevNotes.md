@@ -14,7 +14,7 @@ The 'interval' byte, `C[2:0]`, as detailed in the datasheet on page 31, Table 9-
 
 Setting the 'interval' byte to `0b111` (i.e. `FRAMES_2`) prevents wrap-around scrolling and instead causes a white "background" to appear, from the edge of the screen, when scrolling. Setting to `0b000` (i.e. `FRAMES_5`) eliminates this white background effect, and enables wrap-around scrolling. 
 
-#### <A NAME="markdown-header-waiting-for-the-1-pixel-scroll"></a>Waiting for the 1-pixel scroll
+#### Waiting for the 1-pixel scroll
 
 I found, on the Seeeduino Xiao (SAMD21) at least, that a delay ***is*** required, *immediately* after issuing a 1-pixel scroll command, or when ***repeatedly*** issuing 1-pixel scroll commands. 
 
