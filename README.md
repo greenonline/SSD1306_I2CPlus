@@ -123,12 +123,12 @@ Each of the three regions are scrolled at varying rates, with the mid-ground scr
 
  - [Why Bother?](xtras/WhyBother.md)
  - [Differences](xtras/DevNotes.md)
-   - [1-pixel scrolling and `stopscroll()`](xtras/DevNotes.md#markdown-header-1-pixel-scrolling-and-stopscroll)
-   - [Use of 'interval' byte for 1-pixel scroll](xtras/DevNotes.md#markdown-header-use-of-interval-byte-for-1-pixel-scroll)
-   - [Waiting for the 1-pixel scroll](xtras/DevNotes.md#markdown-header-waiting-for-the-1-pixel-scroll)
-   - [Pairing of 1-pixel scroll and delay](xtras/DevNotes.md#markdown-header-pairing-of-1-pixel-scroll-and-delay)
-   - [Vertical 1-pixel scroll](xtras/DevNotes.md#markdown-header-vertical-1-pixel-scroll)
-   - [Do this BEFORE commencing display](xtras/DevNotes.md#markdown-header-do-this-before-commencing-display)
+   - [1-pixel scrolling and `stopscroll()`](xtras/DevNotes.md#user-content-1-pixel-scrolling-and-stopscroll)
+   - [Use of 'interval' byte for 1-pixel scroll](xtras/DevNotes.md#user-content-use-of-interval-byte-for-1-pixel-scroll)
+   - [Waiting for the 1-pixel scroll](xtras/DevNotes.md#user-content-waiting-for-the-1-pixel-scroll)
+   - [Pairing of 1-pixel scroll and delay](xtras/DevNotes.md#user-content-pairing-of-1-pixel-scroll-and-delay)
+   - [Vertical 1-pixel scroll](xtras/DevNotes.md#user-content-vertical-1-pixel-scroll)
+   - [Do this BEFORE commencing display](xtras/DevNotes.md#user-content-do-this-before-commencing-display)
 
 ## See also
 
